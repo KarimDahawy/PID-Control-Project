@@ -36,9 +36,9 @@ int main()
   PID pid_speed;
   // TODO: Initialize the pid variable.
 
-  double KP_coff = 0.2;
-  double KI_coff = 0.0002;
-  double KD_coff = 2.2;
+  double KP_coff = 0.1;
+  double KI_coff = 0.001;
+  double KD_coff = 1.4;
 
   // double KP_coff_sp = 0.1;
   // double KI_coff_sp = 0;
