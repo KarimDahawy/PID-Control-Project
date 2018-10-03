@@ -20,6 +20,7 @@ We will tune the PID coefficients manually in order to keep the vehicle on the t
 [//]: # (Image References)
 
 [image1]: ./PID_Design.png
+[video1]: ./PID_Output.mp4
 
 ## Dependencies
 -------------------------------------------------------------
@@ -63,7 +64,7 @@ The algorithm follow what's presented in the lessons. I have implemented the PID
 ### 3. Reflection:
 ------------------------------
 
-#### PID Description
+### PID Description
 
 PID controller is the most common control algorithm used in industry. It stands for Proportional-Integral-Derivative Controllers. These three controllers are combined in such a way that it produces a control signal. Following are the description of these coefficients:
 
@@ -83,7 +84,7 @@ As the proportional Controller always generate an offset, the integral controlle
 
 The Derivative Controller depends on the rate of the change of CTE. It reduces the overshooting caused by the proportional controller.
 
-#### Tuning PID Coefficients
+### Tuning PID Coefficients
 
 I have designed a PID controller in order to control vehicle steering angle. I have depend on the CTE that comes from the simulator and tunned my PID coefficients manually in order to keep the vehicle within the track.
 
@@ -96,3 +97,5 @@ Following are my chosen Coefficients:
 | KD_coff          |          1.4         |
 
 For the throttle, I have designed a PID controller for it as well, but I found that setting it by 0.25 with the above parameters is working perfectly.
+
+This ![video][video1] shows a full lap using the above PID controller.
