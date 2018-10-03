@@ -47,16 +47,21 @@ We will tune the PID coefficients manually in order to keep the vehicle on the t
 
 There's an experimental patch for windows in this [PR](https://github.com/udacity/CarND-PID-Control-Project/pull/3)
 
-## 
-
+## Rubric points:
+-------------------------------------------------------------
 ### 1. Compilation
 -----------------------------
 
-### 2. 
+The code compiled successfully using cmake and make.
+
+### 2. Implementation:
+-----------------------------
+
+The algorithm follow what's presented in the lessons. I have implemented the PID controller then tuned its parameter in order keep the vehicle inside the track.
 
 
-
-
+### 3. Reflection:
+------------------------------
 
 ![alt text][image1]
 
