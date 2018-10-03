@@ -84,3 +84,15 @@ As the proportional Controller always generate an offset, the integral controlle
 The Derivative Controller depends on the rate of the change of CTE. It reduces the overshooting caused by the proportional controller.
 
 #### Tuning PID Coefficients
+
+I have designed a PID controller in order to control vehicle steering angle. I have depend on the CTE that comes from the simulator and tunned my PID coefficients manually in order to keep the vehicle within the track.
+
+Following are my chosen Coefficients:
+
+| PID Coefficients | Coefficients Values  |
+|:----------------:|:--------------------:|
+| KP_coff          |          0.1         |
+| KI_coff          |          0.001       |
+| KD_coff          |          1.4         |
+
+For the throttle, I have designed a PID controller for it as well, but I found that setting it by 0.25 with the above parameters is working perfectly.
